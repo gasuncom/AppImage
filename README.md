@@ -1,0 +1,2 @@
+# AppImage
+AppImage for Linux
