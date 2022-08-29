@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+function onExit(){
+  echo "Finishing..."
+  killall "${APPDIR}/unionfs"
+  sleep 1
+  rm -rf "${APPDIR}.SYS_ROOT"
+}
+
+trap "onExit" EXIT
+
+echo "Creating mount point..."
+mkdir -p "${APPDIR}.SYS_ROOT"
+
+echo "Starting proot..."
+"${APPDIR}/unionfs" -o cow "${APPDIR}"=RO:/=RW "${APPDIR}.SYS_ROOT"
+"${APPDIR}/proot" -R "${APPDIR}.SYS_ROOT" ${APPDIR}/command.sh ${@}
+
+
+

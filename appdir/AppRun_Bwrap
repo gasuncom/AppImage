@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+#PATH=${PATH}:${APPDIR}/bin
+#export PATH=${PATH}
+
+#exec ${APPDIR}/usr/local/bin/qq
+
+#if [ ! -d /usr/local/share/tencent-qq/ ];then
+#  sudo mkdir -p /usr/local/share/tencent-qq/
+#fi
+
+#if [ ! -d ${HOME}/.tencent-qq ];then
+#  mkdir -p ${HOME}/.tencent-qq/
+#fi
+
+#if [ ! -e ${HOME}/.tencent-qq/res.db ];then
+#  cp -f ${APPDIR}/tencent-qq/res.db ${HOME}/.tencent-qq/
+#fi
+
+#bwrap --dev-bind / / \
+#      --bind ${HOME}/.tencent-qq /usr/local/share/tencent-qq \
+#      ${APPDIR}/usr/local/bin/qq
+      
+#sudo rm -rf /usr/local/share/tencent-qq/
+
+#sudo rm -rf ${HOME}/.tencent-qq
+
+#第一次启动需要sudo权限，自动生成相应文件
+#bwrap --dev-bind / / \
+#      --bind ${APPDIR}/opt/durapps/wechat-linux-spark/LICENSE /etc/LICENSE \
+#      --bind ${APPDIR}/opt/durapps/wechat-linux-spark/.kyact /etc/.kyact \
+#      --bind ${APPDIR}/opt/durapps/wechat-linux-spark/lsb-release-ukui /etc/lsb-release \
+#      ${APPDIR}/opt/durapps/wechat-linux-spark/files/weixin
+
+#function onExit(){
+#  echo "finishing"
+  #rm -rf /usr/share/netease-cloud-music-gtk4/netease-cloud-music-gtk4.gresource
+  #rm -rf /usr/share/netease-cloud-music-gtk4/
+  #rm -f /usr/share/glib-2.0/schemas/com.gitee.gmg137.NeteaseCloudMusicGtk4.gschema.xml
+  #glib-compile-schemas /usr/share/glib-2.0/schemas
+  #export GSETTING_SCHEMA_DIR=/usr/share/glib-2.0/schemas
+#}
+
+#trap "onExit" EXIT
+
+#if [ ! -d /usr/share/netease-cloud-music-gtk4/ ];then
+#  mkdir -p /usr/share/netease-cloud-music-gtk4/
+#fi
+
+#if [ ! -e /usr/share/netease-cloud-music-gtk4/netease-cloud-music-gtk4.gresource ];then
+#  cp -f ${APPDIR}/usr/share/netease-cloud-music-gtk4/netease-cloud-music-gtk4.gresource /usr/share/netease-cloud-music-gtk4/
+#fi
+
+#if [ ! -e /usr/share/glib-2.0/schemas/com.gitee.gmg137.NeteaseCloudMusicGtk4.gschema.xml ];then
+#  cp -f ${APPDIR}/usr/share/glib-2.0/schemas/com.gitee.gmg137.NeteaseCloudMusicGtk4.gschema.xml /usr/share/glib-2.0/schemas/
+#  glib-compile-schemas /usr/share/glib-2.0/schemas
+#  export GSETTING_SCHEMA_DIR=/usr/share/glib-2.0/schemas
+#fi
+
+#bwrap --dev-bind / / \
+#      ${APPDIR}/usr/bin/netease-cloud-music-gtk4
+
+
+
+

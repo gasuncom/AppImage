@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=xxx
+Comment=xxx
+Exec=xxx
+Icon=xxx
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
