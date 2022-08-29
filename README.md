@@ -1,5 +1,5 @@
 # AppImage
-AppImage for Linux
+AppImage for Linux <a>https://github.com/gasuncom/AppImage/releases</a>
 
 360zip-x86_64.AppImage
 
