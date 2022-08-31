@@ -1,6 +1,8 @@
 # AppImage
 AppImage for Linux <a>https://github.com/gasuncom/AppImage/releases</a>
 
+AnyDesk-6.2.0-1-x86_64-proot-unionfs.AppImage
+
 360zip-x86_64.AppImage
 
 FSearch-v0.2.2-1+3.3-x86_64-proot-unionfs.AppImage
